@@ -1,0 +1,60 @@
+.container {
+  width: 75%;
+  position: absolute;
+  padding: 2rem 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0,0,0,.24) 0px 3px 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-title {
+  font-size: 3rem;
+  position: relative;
+  padding-bottom: .5rem;
+  margin-bottom: 2rem;
+}
+
+.content-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 40%;
+  height: .3rem;
+  background: lightsalmon;
+  border-radius: .5rem;
+}
+
+.content-flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+
+.left .btn {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding-left: .5rem;
+}
+
+.right {
+  flex: 5;
+}
+

@@ -8,6 +8,7 @@ function App() {
           <h2 className="content-title">
             Experience
           </h2>
+
           <div className="content-flex">
             <div className="left">
               <buuton className="btn">Tommy</buuton>
@@ -40,6 +41,7 @@ function App() {
               </ul>
             </div>
           </div>
+          
           <div className="content-btn">
             <button>More info</button>
           </div>
