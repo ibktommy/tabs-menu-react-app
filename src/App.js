@@ -39,11 +39,9 @@ function App() {
   const { title, dates, duties, company } = data[value]
 
   // Button Function on Click
-  // const getData = () => {
-  //   setValue(id)
-  // }
-
-  console.log(data)
+  const getData = (index) => {
+    setValue(index)
+  }
 
   return (
     <>
@@ -58,15 +56,12 @@ function App() {
               {
                 data.map((eachData, index) => {
                   return (
-                    <button key={eachData.id} className='btn' onClick={() => setValue(index)}>
+                    <button key={eachData.id} className={`btn ${index === value && 'active-btn'}`} onClick={() => getData(index)}>
                       {eachData.company}
                     </button>
                   )
                 })
               }
-              {/* <button className="btn active-btn">Tommy</button>
-              <button className="btn">Bigdrop</button>
-              <button className="btn">Cuker</button> */}
             </div>
             <div className="right">
               <h4 className="header">{title}</h4>
