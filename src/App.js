@@ -35,9 +35,15 @@ function App() {
     )
   }
 
-
   // Passing Values from out Fetched Data into the App
   const { title, dates, duties, company } = data[value]
+
+  // Button Function on Click
+  // const getData = () => {
+  //   setValue(id)
+  // }
+
+  console.log(data)
 
   return (
     <>
@@ -50,11 +56,13 @@ function App() {
           <div className="content-flex">
             <div className="left">
               {
-                data.map(({ id, company }) => (
-                  <button key={id} className='btn'>
-                    {company}
-                  </button>
-                ))
+                data.map((eachData, index) => {
+                  return (
+                    <button key={eachData.id} className='btn' onClick={() => setValue(index)}>
+                      {eachData.company}
+                    </button>
+                  )
+                })
               }
               {/* <button className="btn active-btn">Tommy</button>
               <button className="btn">Bigdrop</button>
