@@ -1,3 +1,10 @@
+.title-center {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40%;
+}
+
 .container {
   min-width: 75%;
   position: absolute;
