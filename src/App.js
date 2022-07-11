@@ -35,6 +35,7 @@ function App() {
     )
   }
 
+
   // Passing Values from out Fetched Data into the App
   const { title, dates, duties, company } = data[value]
 
@@ -48,9 +49,16 @@ function App() {
 
           <div className="content-flex">
             <div className="left">
-              <button className="btn active-btn">Tommy</button>
+              {
+                data.map(({ id, company }) => (
+                  <button key={id} className='btn'>
+                    {company}
+                  </button>
+                ))
+              }
+              {/* <button className="btn active-btn">Tommy</button>
               <button className="btn">Bigdrop</button>
-              <button className="btn">Cuker</button>
+              <button className="btn">Cuker</button> */}
             </div>
             <div className="right">
               <h4 className="header">{title}</h4>
@@ -67,24 +75,6 @@ function App() {
                     )
                   })
                 }
-                {/* <li>
-                  <KeyboardDoubleArrowRightIcon />
-                  <p className="work-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
-                  </p>
-                </li>
-                <li>
-                  <KeyboardDoubleArrowRightIcon />
-                  <p className="work-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
-                  </p>
-                </li>
-                <li>
-                  <KeyboardDoubleArrowRightIcon />
-                  <p className="work-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
-                  </p>
-                </li> */}
               </ul>
             </div>
           </div>
