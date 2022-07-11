@@ -53,11 +53,21 @@ function App() {
               <button className="btn">Cuker</button>
             </div>
             <div className="right">
-              <h4 className="header">Engineering Intern</h4>
-              <p className="company">Cuker</p>
-              <p className="period">May 2014 - September 2015</p>
+              <h4 className="header">{title}</h4>
+              <p className="company">{company}</p>
+              <p className="period">{dates}</p>
               <ul className="worklist">
-                <li>
+                {
+                  duties.map((duty, index) => {
+                    return (
+                      <li key={index}>
+                        <KeyboardDoubleArrowRightIcon />
+                        <p className="work-details">{duty}</p>
+                      </li>
+                    )
+                  })
+                }
+                {/* <li>
                   <KeyboardDoubleArrowRightIcon />
                   <p className="work-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
@@ -74,7 +84,7 @@ function App() {
                   <p className="work-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
                   </p>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
