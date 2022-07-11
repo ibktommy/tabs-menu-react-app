@@ -1,6 +1,19 @@
 import './App.css';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
+// Database
+const url = 'https://course-api.com/react-tabs-project'
+
+// Function to get Data
+const fetchURL = async () => {
+  const response = await fetch(url)
+  const responseData = await response.json()
+
+  console.log(responseData)
+}
+
+fetchURL()
+
 function App() {
   return (
     <>

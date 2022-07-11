@@ -98,6 +98,7 @@ button {
   width: fit-content;
   padding: .2rem .8rem;
   color: #353434;
+  margin: .5rem 0;
 }
 
 .period {
