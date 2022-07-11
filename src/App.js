@@ -11,9 +11,9 @@ function App() {
 
           <div className="content-flex">
             <div className="left">
-              <buuton className="btn">Tommy</buuton>
-              <buuton className="btn">Bigdrop</buuton>
-              <buuton className="btn">Cuker</buuton>
+              <button className="btn active-btn">Tommy</button>
+              <button className="btn">Bigdrop</button>
+              <button className="btn">Cuker</button>
             </div>
             <div className="right">
               <h4 className="header">Engineering Intern</h4>
@@ -21,19 +21,19 @@ function App() {
               <p className="period">May 2014 - September 2015</p>
               <ul className="worklist">
                 <li>
-                  <i class="fa-solid fa-chevrons-right"></i>
+                  <i className="fa-solid fa-chevrons-right"></i>
                   <p className="work-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
                   </p>
                 </li>
                 <li>
-                  <i class="fa-solid fa-chevrons-right"></i>
+                  <i className="fa-solid fa-chevrons-right"></i>
                   <p className="work-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
                   </p>
                 </li>
                 <li>
-                  <i class="fa-solid fa-chevrons-right"></i>
+                  <i className="fa-solid fa-chevrons-right"></i>
                   <p className="work-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
                   </p>
