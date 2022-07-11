@@ -9,6 +9,7 @@ function App() {
   // Setting state
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState([])
+  const [value, setValue] = useState(0)
 
 
   // Function to get Data
@@ -25,6 +26,7 @@ function App() {
     fetchURL()
   }, [])
 
+  // Condition that checks if the Data was Fetched
   if (loading) {
     return (
       <>
@@ -32,6 +34,9 @@ function App() {
       </>
     )
   }
+
+  // Passing Values from out Fetched Data into the App
+  const { title, dates, duties, company } = data[value]
 
   return (
     <>
