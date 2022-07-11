@@ -1,4 +1,5 @@
 import './App.css';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 function App() {
   return (
@@ -21,19 +22,19 @@ function App() {
               <p className="period">May 2014 - September 2015</p>
               <ul className="worklist">
                 <li>
-                  <i className="fa-solid fa-chevrons-right"></i>
+                  <KeyboardDoubleArrowRightIcon />
                   <p className="work-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
                   </p>
                 </li>
                 <li>
-                  <i className="fa-solid fa-chevrons-right"></i>
+                  <KeyboardDoubleArrowRightIcon />
                   <p className="work-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
                   </p>
                 </li>
                 <li>
-                  <i className="fa-solid fa-chevrons-right"></i>
+                  <KeyboardDoubleArrowRightIcon />
                   <p className="work-details">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, labore. Quo, dolores commodi. Repellat, dicta.
                   </p>
